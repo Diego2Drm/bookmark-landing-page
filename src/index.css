@@ -2,4 +2,8 @@
 
 @theme {
   --font-Rubik: "Rubik", "sans-serif";
+  --color-Blue-600: #5368df;
+  --color-Red-400: #FF5263; 
+  --color-Grey-50: #F7F7F7; 
+  --color-Blue-950: #1F2F56;
 }
