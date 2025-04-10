@@ -1,16 +1,10 @@
 import React from "react";
 import { LogoNav } from "./LogoNav";
 import IconCLose from "../../assets/images/icon-close.svg";
-import IconFacebook from "../../assets/images/icon-facebook.svg"
-import IconTwitter from "../../assets/images/icon-twitter.svg"
+import { links } from "../utils/Links";
+import { SocialMedia } from "../utils/SocialMedia";
 
 const NavBar = ({ isopen, handleClose }) => {
-
-  const links = [
-    { name: 'Features', to: '#features' },
-    { name: 'Pricing', to: '#pricing' },
-    { name: 'Contact', to: '#contact' },
-  ]
 
   return (
     <section className={`${isopen ? 'block' : 'hidden'} w-full h-full bg-[#252b46] absolute z-30 top-0 left-0 px-7 pt-5 opacity-95`}>
@@ -34,10 +28,7 @@ const NavBar = ({ isopen, handleClose }) => {
           <a href="#">LOGIN</a>
         </button>
       </div>
-      <div className="w-full flex justify-center gap-5 mt-36">
-        <img src={IconFacebook} alt="icon-facebook" />
-        <img src={IconTwitter} alt="icon-twitter" />
-      </div>
+      <SocialMedia />
     </section>
   )
 }
