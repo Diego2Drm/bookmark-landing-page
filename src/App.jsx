@@ -1,4 +1,5 @@
 import { BookMark } from "./components/Bookmark"
+import { Extensions } from "./components/Extensions"
 import { Features } from "./components/Features"
 import { Header } from "./components/Header"
 import { Layout } from "./Layout"
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <BookMark />
       <Features/>
+      <Extensions />
     </Layout>
   )
 }
