@@ -3,7 +3,7 @@ import LogoBookmark from "../../assets/images/illustration-hero.svg"
 
 const BookMark = () => {
   return (
-    <section>
+    <section className="p-7 pt-32 overflow-x-hidden">
       <div className="relative mb-10">
         <div className="w-[340px] h-44 bg-Blue-600 absolute -z-10 -right-20 bottom-0 rounded-l-[6rem]"></div>
         <img src={LogoBookmark} alt="Logo-Bookmark" />

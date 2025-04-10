@@ -23,7 +23,7 @@ const Faqs = () => {
   ]
 
   return (
-    <section className="mt-20">
+    <section className="mt-10 p-7">
       <h2 className="text-Blue-950 font-bold text-2xl text-center my-5">
         Frequently Asked Questions
       </h2>

@@ -14,7 +14,7 @@ const Extensions = () => {
   ]
 
   return (
-    <section className="mt-20">
+    <section className="mt-10 p-7">
       <h2 className="text-center text-Blue-950 text-2xl font-bold">
         Download the extension
       </h2>

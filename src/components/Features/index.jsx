@@ -3,7 +3,7 @@ import image1 from "../../assets/images/illustration-features-tab-1.svg"
 
 const Features = () => {
   return (
-    <section className="mt-20">
+    <section className="mt-10 p-7 overflow-x-hidden">
       <h2 className="text-Blue-950 font-bold text-center text-2xl">Features</h2>
       <p className="text-center text-[.99rem] text-gray-400 mt-5">
         Our aim is to make it quick and easy for yuo to access your favourite websites. Your booksmarks sync between your devices so you can access them on the go.
