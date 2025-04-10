@@ -23,7 +23,7 @@ const NavBar = ({ isopen, handleClose }) => {
           }
         </ul>
       </nav>
-      <div>
+      <div className="mb-36">
         <button className="w-full bg-transparent border-2 border-[#f7f7f7] text-center p-5 mt-7 text-2xl text-[#f7f7f7] font-semibold rounded-lg tracking-widest">
           <a href="#">LOGIN</a>
         </button>
