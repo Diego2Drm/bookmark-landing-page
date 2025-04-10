@@ -4,7 +4,7 @@ import { Faqs } from "./components/Faqs"
 import { Features } from "./components/Features"
 import { Header } from "./components/Header"
 import { Login } from "./components/Login"
-import { Layout } from "./Layout"
+
 
 function App() {
   return (
