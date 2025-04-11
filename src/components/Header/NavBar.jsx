@@ -7,7 +7,7 @@ import { SocialMedia } from "../utils/SocialMedia";
 const NavBar = ({ isopen, handleClose }) => {
 
   return (
-    <section className={`${isopen ? 'block' : 'hidden'} w-full h-full bg-[#252b46] absolute z-30 top-0 left-0 px-7 pt-5 opacity-95`}>
+    <section className={`${isopen ? 'block' : 'hidden'} w-full h-screen bg-[#252b46] fixed z-30 px-7 pt-5 opacity-95 md:hidden`}>
       <div className="flex justify-between items-center mb-5 border-b-2 pb-7 border-gray-600">
         <LogoNav />
         <img src={IconCLose} alt="icon-close" onClick={handleClose}/>
@@ -17,7 +17,7 @@ const NavBar = ({ isopen, handleClose }) => {
           {
             links.map((link, i) => (
               <li key={i} className="w-full border-b-2 pb-5 border-gray-600 text-center">
-                <a href="#">{link.name}</a>
+                <a href={link.to}>{link.name}</a>
               </li>
             ))
           }
@@ -25,7 +25,7 @@ const NavBar = ({ isopen, handleClose }) => {
       </nav>
       <div className="mb-36">
         <button className="w-full bg-transparent border-2 border-[#f7f7f7] text-center p-5 mt-7 text-2xl text-[#f7f7f7] font-semibold rounded-lg tracking-widest">
-          <a href="#">LOGIN</a>
+          <a href="#login">LOGIN</a>
         </button>
       </div>
       <SocialMedia />
