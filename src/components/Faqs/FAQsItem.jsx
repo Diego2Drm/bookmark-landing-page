@@ -1,6 +1,6 @@
 import React from "react";
-import { IconArrowDown } from "./IconArrow";
 import { IconArrowUp } from "./IconArrowUp";
+import { IconArrowDown } from "./IconArrowDown";
 
 const FAQItem = ({ question, answer, isOpenfaq, handleOpen }) => {
 
