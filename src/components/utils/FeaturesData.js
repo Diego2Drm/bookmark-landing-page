@@ -8,7 +8,7 @@ export const featuresData = [
     title: "Simple Bookmarking",
     image: ImgFeature1,
     subTitle: "Bookmark in one click",
-    info: " Our aim is to make it quick and easy for yuo to access your favourite websites. Your booksmarks sync between your devices so you can access them on the go.",
+    info: "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites",
   },
   {
     id: 2,
