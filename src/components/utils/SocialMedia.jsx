@@ -4,7 +4,7 @@ import IconTwitter from "../../assets/images/icon-twitter.svg"
 
 const SocialMedia = () => {
   return (
-    <div className="w-full flex justify-center gap-5">
+    <div className="w-full flex justify-center gap-5 lg:justify-end lg:gap-10">
       <img src={IconFacebook} alt="icon-facebook" />
       <img src={IconTwitter} alt="icon-twitter" />
     </div>
