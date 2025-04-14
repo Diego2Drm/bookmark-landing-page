@@ -12,7 +12,7 @@ const Header = () => {
   }
   return (
     <>
-      <header className="shadow-md shadow-gray-300 flex justify-between items-center fixed w-full left-0 top-0 p-5 z-20 bg-Grey-50 md:px-22">
+      <header className="shadow-md shadow-gray-300 flex justify-between items-center fixed w-full left-0 top-0 p-5 z-20 bg-Grey-50 md:px-32">
         <img src={Logo} alt="Logo" />
         <img src={IconHamburger} alt="icon-hamburger" onClick={handleOpen} className="md:hidden" />
 

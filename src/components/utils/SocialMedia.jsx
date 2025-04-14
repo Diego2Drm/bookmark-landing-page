@@ -1,12 +1,12 @@
 import React from "react";
-import IconFacebook from "../../assets/images/icon-facebook.svg"
-import IconTwitter from "../../assets/images/icon-twitter.svg"
+import { IconFacebook, IconTwitter } from "./Icons";
 
 const SocialMedia = () => {
   return (
     <div className="w-full flex justify-center gap-5 lg:justify-end lg:gap-10">
-      <img src={IconFacebook} alt="icon-facebook" />
-      <img src={IconTwitter} alt="icon-twitter" />
+      <IconFacebook />
+      <IconTwitter />
+
     </div>
   )
 }

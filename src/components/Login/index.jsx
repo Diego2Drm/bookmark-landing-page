@@ -45,7 +45,7 @@ const Login = () => {
             </>
           }
         </div>
-        <button className="bg-Red-400 text-Grey-50 font-semibold w-full p-3 rounded-lg lg:w-1/4"
+        <button className="bg-Red-400 text-Grey-50 font-semibold w-full p-3 rounded-lg lg:w-1/4 hover:bg-amber-50 hover:border-2 hover:border-Red-400 hover:text-Red-400 cursor-pointer duration-300 ease-in"
           onClick={handleSubmit}
         >
           Contact Us

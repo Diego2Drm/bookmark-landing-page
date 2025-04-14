@@ -10,7 +10,7 @@ const Footer = () => {
       <ul className="flex flex-col gap-5 text-Grey-50 font-light tracking-widest mb-10 lg:flex-row lg:mb-0">
         {
           links.map((link, i) => (
-          <li key={i} className="uppercase text-center">{link.name}</li>
+          <li key={i} className="uppercase text-center hover:text-Red-400 cursor-pointer transition duration-300 ease-in">{link.name}</li>
         ))
         }
       </ul>

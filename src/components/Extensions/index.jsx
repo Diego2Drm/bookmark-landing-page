@@ -30,7 +30,9 @@ const Extensions = () => {
               <h4 className="text-Blue-950 font-semibold text-xl">Add to {item.name}</h4>
               <p className="text-gray-400 text-base mt-3">Minimum version {item.version}</p>
               <img src={bgDots} alt="bg-dots" className="my-5" />
-              <button className="bg-Blue-600 rounded-lg p-4 w-full mt-5 text-Grey-50 font-semibold">Add & Install Extension</button>
+              <button className="bg-Blue-600 rounded-lg p-4 w-full mt-5 text-Grey-50 font-semibold hover:bg-Grey-50 hover:border-2 hover:border-Blue-600 hover:text-Blue-600 duration-200 ease-in cursor-pointer">
+                Add & Install Extension
+                </button>
             </article>
           ))
         }

@@ -24,7 +24,7 @@ const Features = () => {
           {
             featuresData.map(feature => (
               <li key={feature.id}
-                className="relative border-b-2 border-gray-300 w-full text-center pb-4 md:border-none md:w-80"
+                className="relative border-b-2 border-gray-300 w-full text-center pb-4 md:border-none md:w-80 hover:text-Red-400 cursor-pointer"
                 onClick={() => handleActiveData(feature)}>
                 {feature.title}
                 <span className={`${activeData.title == feature.title ? 'block w-40 h-2 rounded-md bg-red-500 bottom-0 left-1/2 transform -translate-x-1/2 absolute lg:w-60' : ''}`}></span>

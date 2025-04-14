@@ -6,10 +6,10 @@ const FAQItem = ({ question, answer, isOpenfaq, handleOpen }) => {
 
   return (
     <div className="flex flex-col mb-5 w-full border-b-2 border-gray-300 pb-5">
-      <div className="flex justify-between items-center w-full "
+      <div className="flex justify-between items-center w-full group cursor-pointer"
         onClick={handleOpen}
       >
-        <p className="text-gray-950">{question}</p>
+        <p className="text-gray-950 group-hover:text-Red-400">{question}</p>
         {
           isOpenfaq ? <IconArrowUp /> : <IconArrowDown />
         }
