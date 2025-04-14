@@ -9,7 +9,7 @@ const Faqs = () => {
     setIsOpenIndex(isOpenIndex === index ? null : index)
   }
   return (
-    <section className="mt-10 p-7">
+    <section className="mt-10 p-7 lg:w-1/2 lg:mx-auto">
       <h2 className="text-Blue-950 font-bold text-2xl text-center my-5">
         Frequently Asked Questions
       </h2>
