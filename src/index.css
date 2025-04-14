@@ -7,3 +7,12 @@
   --color-Grey-50: #F7F7F7; 
   --color-Blue-950: #1F2F56;
 }
+
+@media (min-width: 1440px) {
+  #pricing div article:nth-child(2) {
+    margin-top: 4rem;
+  }
+  #pricing div article:nth-child(3) {
+    margin-top: 8rem;
+  }
+}
