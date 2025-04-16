@@ -1,17 +1,24 @@
 import React, { useState } from "react";
 import IconError from "../../assets/images/icon-error.svg"
+import { useDispatch, useSelector } from "react-redux";
+import { setEmail, setError } from "../../actions";
+
 const Login = () => {
 
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState(false)
+  const email = useSelector(state => state.email);
+  const error = useSelector(state => state.error);
+  const dispatch = useDispatch();
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     if (!validateEmail(email)) {
-      setError(true)
+      dispatch(setError(true))
     } else {
-      setError(false)
+      dispatch(setError(false))
+      alert(`Email -> ${email} <- ok`,)
+      dispatch(setEmail(''));
     }
   }
 
@@ -21,7 +28,7 @@ const Login = () => {
   }
 
   const handleChange = (event) => {
-    setEmail(event.target.value)
+    dispatch(setEmail(event.target.value))
   }
 
   return (
