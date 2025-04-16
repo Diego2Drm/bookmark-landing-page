@@ -1,3 +1,4 @@
 const SET_ISOPEN = "SE_ISOPEN";
+const SET_ACTIVEDATA = "SET_ACTIVEDATA";
 
-export { SET_ISOPEN };
+export { SET_ISOPEN ,SET_ACTIVEDATA };
