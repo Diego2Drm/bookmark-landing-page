@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { faqsData } from "../utils/FAQsData";
 import { FAQItem } from "./FAQsItem";
+import { useDispatch, useSelector } from "react-redux";
+import { setIsOpenIndex } from "../../actions";
 
 const Faqs = () => {
-  const [isOpenIndex, setIsOpenIndex] = useState(null);
+  const isOpenIndex = useSelector(state => state.isOpenIndex);
+  const dispatch = useDispatch();
 
-  const handleOpen = (index) => {
-    setIsOpenIndex(isOpenIndex === index ? null : index)
-  }
   return (
     <section className="mt-10 p-7 lg:w-1/2 lg:mx-auto">
       <h2 className="text-Blue-950 font-bold text-2xl text-center my-5">
@@ -16,8 +16,7 @@ const Faqs = () => {
       <p className="text-center text-gray-400 mb-10">
         Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
       </p>
-
-
+      
       {
         faqsData.map((faq, i) => (
           <FAQItem
@@ -25,7 +24,7 @@ const Faqs = () => {
             question={faq.question}
             answer={faq.answer}
             isOpenfaq={isOpenIndex === i}
-            handleOpen={() => handleOpen(i)}
+            handleOpen={() => dispatch(setIsOpenIndex(isOpenIndex === i ? null : i))}
           />
         ))
       }
